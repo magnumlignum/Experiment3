@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	char arr[100];
+	int w,x,y,z;
+
+	cout<<"Enter characters: ";
+	cin>>arr;
+	for(x=0;arr[x]!='\0';x++)
+		w++;
+	for(x=0;x<w;x++)
+	{		
+		for(y=x+1;y<w;y++)
+		{
+			if(arr[x]>arr[y])
+			{
+				z =arr[x];
+				arr[x]=arr[y];
+				arr[y]=z;
+			}
+		}
+	}
+	
+	cout<<"\nSorted (ascending): ";
+	for(x=0;x<w;x++)
+		cout<<arr[x]<<" ";
+	cout<<"\n\nNumber of characters: "<< w;
+	return 0;
+}
