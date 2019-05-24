@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+int main ()
+{
+    int A[7],B[7],C[7],temp,day;
+
+    cout <<"Enter temperatures for:\n";
+    
+    for (day=1,temp=0;temp<7;temp++)
+    {
+    	cout<<"Province A, Day "<<day++<<": ";
+        cin>>A[temp];
+	}
+	
+	cout <<"Enter temperatures for:\n";
+	
+    for (day=1,temp=0;temp<7;temp++)
+    {
+    	cout<<"Province B, Day "<<day++<<": ";
+        cin>>B[temp];
+	}
+	
+	cout <<"Enter temperatures for:\n";
+	
+    for (day=1,temp=0;temp<7;temp++)
+    {
+    	cout<<"Province C, Day "<<day++<<": ";
+        cin>>C[temp];
+	}		
+	
+	for (day=1,temp=0;temp<7;temp++)
+	{
+		cout<<"\nProvince A, Day "<<day++<<" = "<<A[temp];
+	}
+	
+	for (day=1,temp=0;temp<7;temp++)
+	{
+		cout<<"\nProvince B, Day "<<day++<<" = "<<B[temp];
+	}	
+	
+	for (day=1,temp=0;temp<7;temp++)
+	{
+		cout<<"\nProvince C, Day "<<day++<<" = "<<C[temp];
+	}	
+	
+    return 0;
+}
